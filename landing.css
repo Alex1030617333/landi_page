@@ -1,0 +1,109 @@
+:root{
+   --fondocards:linear-gradient(to left, rgb(9, 9, 221),rgb(152, 6, 126));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image:linear-gradient(to top, rgb(1, 1, 15),rgb(9, 59, 225), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+figcaption::first-line{
+    color: lime;
+
+    
+    font-size: 20px;
+}
+.titulo:nth-child(1) {
+    background-image:linear-gradient(to left, rgb(10, 238, 242),rgb(9, 20, 236));
+} 
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+   
+}
+main div:nth-child(2){
+    background-image:var(--fondocards);
+    border-radius: 10px;
+}
+main div:nth-child(1){
+    background-image:var(--fondocards);
+    border-radius: 10px;
+}
+main div:nth-child(3){
+    background-image:var(--fondocards);
+    border-radius: 10px;
+}
+main img{
+    width: 100px;
+    border-radius: 90px;
+    padding: 10px;
+    margin-left: 100px;
+  
+}
+
+figcaption{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+   
+}
+.parafo1,.parafo2{
+    background: black;
+    color: white;
+}
+button{
+    margin-left: 100px;
+    padding: 5px;
+    width: 70px;
+}
+
+
+
+
+
+
+@media screen and (max-width:393px){
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    h1{
+       
+        
+        font-size: 30px;
+        padding: 10px;
+        background-image:linear-gradient(to top, rgb(9, 59, 225),rgb(1, 1, 15));
+    }
+    .titulo{
+   height: 50px;
+    }
+    
+}
+.cards{
+    opacity: 0;
+    transform: scale(0,0);
+    transition: all 1.2s ease-out ;
+}
+.motrar{
+    transform: scale(1);
+    opacity: 1;
+}
